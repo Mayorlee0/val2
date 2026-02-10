@@ -7,8 +7,12 @@ Runs as a static site (no build step). Works locally and deploys on Vercel.
 Just open `index.html` in a browser.
 
 ## Deploy to Vercel
-Import the folder as a Vercel project (static). No framework.
-`vercel.json` ensures all routes serve `index.html`.
+1. Import this repository as a Vercel project.
+2. Set the **Root Directory** to the repo root (where `index.html` lives).
+3. Keep **Framework Preset** as `Other` and leave build settings empty.
+4. Deploy.
+
+`vercel.json` rewrites all routes to `index.html` so direct URLs don't 404.
 
 ## Controls
 - Desktop: Arrow keys or WASD
